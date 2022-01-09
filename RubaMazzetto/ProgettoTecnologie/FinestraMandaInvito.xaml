@@ -1,0 +1,21 @@
+﻿<Window x:Class="ProgettoTecnologie.FinestraMandaInvito"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgettoTecnologie"
+        mc:Ignorable="d"
+        Title="FinestraMandaInvito" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="sfondotavologioco.jpeg"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="518,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="244"><Run Foreground="White" FontWeight="Bold" Text="IL TUO USERNAME:"/><LineBreak/><Run FontWeight="Bold"/><LineBreak/><Run FontWeight="Bold"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="72,129,0,0" TextWrapping="Wrap" Text="IP AVVERSARIO:" VerticalAlignment="Top" Height="88" Width="244" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="txtIP" HorizontalAlignment="Left" Height="24" Margin="72,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" Background="#0CFFFFFF" TextChanged="TextBox_TextChanged" Foreground="White"/>
+        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Height="24" Margin="518,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" Background="#0CFFFFFF" Foreground="White" TextChanged="txtUser_TextChanged"/>
+        <Button x:Name="btnInvia" Content="INVIA" HorizontalAlignment="Left" Margin="294,286,0,0" VerticalAlignment="Top" Width="200" Height="56" Click="btnInvia_Click" IsEnabled="False"/>
+        <Button x:Name="btnBack" Content="TURN BACK" HorizontalAlignment="Left" Margin="10,354,0,0" VerticalAlignment="Top" Width="134" Height="55" Click="btnBack_Click"/>
+
+    </Grid>
+</Window>
